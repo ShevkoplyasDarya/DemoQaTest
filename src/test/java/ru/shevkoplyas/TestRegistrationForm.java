@@ -13,18 +13,18 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class TestRegistrationForm {
-        @BeforeAll
-        static void beforeAll() {
+    @BeforeAll
+    static void beforeAll() {
         Configuration.startMaximized = true;
-        }
+    }
 
-        @AfterEach
-        void afterAll() {
+    @AfterEach
+    void afterAll() {
         Selenide.closeWebDriver();
-        }
+    }
 
-        @Test
-        void fillFormTest() {
+    @Test
+    void fillFormTest() {
 
         open("https://demoqa.com/automation-practice-form");
         $("#firstName").setValue("Kate");
@@ -41,8 +41,7 @@ public class TestRegistrationForm {
         $("#hobbiesWrapper").$(byText("Reading")).click();
 
         //upload image
-        File image = new File("src/test/java/resourses/squirrel.jpg");
-        $("#uploadPicture").uploadFile(image);
+        $("#uploadPicture").uploadFile(new File("src/test/java/resourses/squirrel.jpg"));
 
         $("#currentAddress").setValue("Elm street, 10").pressEnter();
         $("#stateCity-wrapper").$(byText("Select State")).scrollIntoView(true).click();
@@ -64,5 +63,5 @@ public class TestRegistrationForm {
         $x("//table/tbody/tr[10]").shouldHave(text("Rajasthan Jaipur"));
         $("#closeLargeModal").scrollIntoView(true).click();
 
-        }
-        }
+    }
+}
