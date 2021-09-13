@@ -1,4 +1,4 @@
-package ru.shevkoplyas;
+package ru.shevkoplyas.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
@@ -41,7 +41,7 @@ public class TestRegistrationForm {
         $("#hobbiesWrapper").$(byText("Reading")).click();
 
         //upload image
-        $("#uploadPicture").uploadFile(new File("src/test/java/resourses/squirrel.jpg"));
+        $("#uploadPicture").uploadFile(new File("src/test/resourses/images/squirrel.jpg"));
 
         $("#currentAddress").setValue("Elm street, 10").pressEnter();
         $("#stateCity-wrapper").$(byText("Select State")).scrollIntoView(true).click();
