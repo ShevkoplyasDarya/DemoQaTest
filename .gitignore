@@ -24,7 +24,7 @@
 .idea
 .allure/
 .gradle/
-.build/
+.build
 allure-results/
 gradle/
 build/
@@ -40,3 +40,4 @@ target/
 /gradlew.bat
 .todo
 *.properties
+/build/
