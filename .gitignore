@@ -24,10 +24,8 @@
 .idea
 .allure/
 .gradle/
-.build
 allure-results/
 gradle/
-build/
 bin/
 out/
 logs/
@@ -40,4 +38,3 @@ target/
 /gradlew.bat
 .todo
 *.properties
-/build/
