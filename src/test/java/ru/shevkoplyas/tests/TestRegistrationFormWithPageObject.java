@@ -1,6 +1,6 @@
 package ru.shevkoplyas.tests;
 
-import com.codeborne.selenide.commands.ToString;
+
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
 import ru.shevkoplyas.pages.RegistrationPage;
