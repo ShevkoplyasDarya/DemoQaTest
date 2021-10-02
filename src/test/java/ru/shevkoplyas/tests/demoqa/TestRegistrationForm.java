@@ -1,10 +1,8 @@
 package ru.shevkoplyas.tests.demoqa;
 
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
+
 import org.junit.jupiter.api.Test;
+import ru.shevkoplyas.tests.TestBase;
 
 import java.io.File;
 
@@ -12,16 +10,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class TestRegistrationForm {
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.startMaximized = true;
-    }
-
-    @AfterEach
-    void afterAll() {
-        Selenide.closeWebDriver();
-    }
+public class TestRegistrationForm extends TestBase {
 
     @Test
     void fillFormTest() {
