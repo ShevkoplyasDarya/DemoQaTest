@@ -1,4 +1,4 @@
-package ru.shevkoplyas.tests;
+package ru.shevkoplyas.tests.demoqa;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
