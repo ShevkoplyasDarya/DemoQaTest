@@ -61,7 +61,7 @@ public class TestRegistrationForm {
         $x("//table/tbody/tr[8]").shouldHave(text("squirrel.jpg"));
         $x("//table/tbody/tr[9]").shouldHave(text("Elm street, 10"));
         $x("//table/tbody/tr[10]").shouldHave(text("Rajasthan Jaipur"));
-        $("#closeLargeModal").scrollIntoView(true).click();
+        //$("#closeLargeModal").scrollIntoView(true).click();
 
     }
 }
