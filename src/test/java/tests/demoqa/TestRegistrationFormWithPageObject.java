@@ -1,10 +1,10 @@
-package ru.shevkoplyas.tests.demoqa;
+package tests.demoqa;
 
 
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
-import ru.shevkoplyas.pages.RegistrationPage;
-import ru.shevkoplyas.tests.TestBase;
+import pages.RegistrationPage;
+import tests.TestBase;
 
 public class TestRegistrationFormWithPageObject extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();

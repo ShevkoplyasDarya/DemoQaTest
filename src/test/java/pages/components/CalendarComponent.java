@@ -1,4 +1,4 @@
-package ru.shevkoplyas.pages.components;
+package pages.components;
 
 import static com.codeborne.selenide.Selenide.$;
 

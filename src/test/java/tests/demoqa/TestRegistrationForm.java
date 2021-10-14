@@ -1,8 +1,8 @@
-package ru.shevkoplyas.tests.demoqa;
+package tests.demoqa;
 
 
 import org.junit.jupiter.api.Test;
-import ru.shevkoplyas.tests.TestBase;
+import tests.TestBase;
 
 import java.io.File;
 

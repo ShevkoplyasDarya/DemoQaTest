@@ -1,7 +1,7 @@
-package ru.shevkoplyas.pages;
+package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import ru.shevkoplyas.pages.components.CalendarComponent;
+import pages.components.CalendarComponent;
 
 
 import java.io.File;
