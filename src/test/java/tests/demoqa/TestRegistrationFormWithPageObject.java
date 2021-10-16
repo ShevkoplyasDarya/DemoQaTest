@@ -18,7 +18,7 @@ public class TestRegistrationFormWithPageObject extends TestBase {
     String month = "October";
     String year = "1990";
     String subject = "Maths";
-    String pathName = "src/test/resourses/images/squirrel.jpg";
+    String pathName = "src/test/resources/images/squirrel.jpg";
     String state = "Rajasthan";
     String city = "Jaipur";
 
