@@ -9,7 +9,6 @@ public class SystemPropertiesTests {
         String value = System.getProperty("value");
         System.out.println(value);
         // null
-
     }
 
     @Test
@@ -48,4 +47,17 @@ public class SystemPropertiesTests {
         //  opera
     }
 
+    @Test
+    @Tag("properties")
+    void someTest5() {
+        String browser = System.getProperty("browser", "chrome");
+        String version = System.getProperty("version", "91");
+        String browserSize = System.getProperty("browserSize", "300x300");
+
+        System.out.println(browser);
+        System.out.println(version);
+        System.out.println(browserSize);
+
+        // gradle clean properties_tests -Dbrowser=opera -Dversion=93
+    }
 }
